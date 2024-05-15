@@ -30,3 +30,14 @@ pip install mysql-connector
 ```
 pip install mysql-connector-python
 ```
+
+Stworzyć baze danych za pomocą pliku mydb.py
+```
+python manage.py migrate
+```
+```
+python manage.py createsuperuser
+```
+```
+python manage.py runserver
+```

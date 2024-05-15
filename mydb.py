@@ -14,4 +14,4 @@ dataBase = mysql.connector.connect(
 cursorObject = dataBase.cursor()
 
 # Create a database
-cursorObject.execute("CREATE DATABASE Baza Danych")
+cursorObject.execute("CREATE DATABASE Baza_Danych")

@@ -10,11 +10,11 @@ MySQL 8.0.37
 
 Uruchamianie w Git Bash
 ```
-python -m venv virtual
+python -m venv wirtual
 ```
 
 ```
-source virtual/Scripts/activate
+source wirtual/Scripts/activate
 ```
 
 ```

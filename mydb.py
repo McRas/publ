@@ -1,12 +1,8 @@
-# Install Mysql on your computer : https://dev.mysql.com/downloads/installer/
-
-#pip install mysql-connector-python 
-
 import mysql.connector
 
 dataBase = mysql.connector.connect(
 	host = 'localhost',
-	user = 'root', #User form MySQL
+	user = 'root', #User from MySQL
 	passwd = '1234' #Password from MySQL
 	)
 

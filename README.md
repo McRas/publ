@@ -37,6 +37,9 @@ django-admin startproject project
 python manage.py startapp website
 ```
 ```
+Zaktualizować dane dotyczące MYSQL database w pliku settings.py
+```
+```
 Stworzyć baze danych za pomocą pliku mydb.py
 ```
 ```

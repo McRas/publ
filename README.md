@@ -30,7 +30,10 @@ pip install mysql-connector
 ```
 pip install mysql-connector-python
 ```
-
+django-admin startproject project
+```
+python manage.py startapp website
+```
 Stworzyć baze danych za pomocą pliku mydb.py
 ```
 python manage.py migrate

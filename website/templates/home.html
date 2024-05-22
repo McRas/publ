@@ -6,7 +6,21 @@
 
 {% if user.is_authenticated %}
 
-<h1>Hello World</h1>
+<h1>Records</h1>
+    {% if records %}
+	{% for record in records %}
+    <tr>
+			<td>{{ record.imie }} {{ record.nazwisko}}</td>
+			<td>{{ record.mail }}</td>
+			<td>{{ record.nr_telefonu }}</td>
+			<td>{{ record.adres }}</td>
+			<td>{{ record.miasto }}</td>
+			<td>{{ record.wojewodztwo }}</td>
+			<td>{{ record.kodpocztowy }}</td>
+			<td>{{ record.utworzono }}</td>
+			<td><a href="{% url 'record' record.id %}">{{ record.id }}</a></td>
+		</tr>
+	{% endfor %}
 
 {% else %}
 

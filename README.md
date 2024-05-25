@@ -10,17 +10,18 @@ MySQL 8.0.37
 
 Uruchamianie w Git Bash
 ```
+```
+Tworzymy tęczke aplikacji "mkdir Nazwa teczki"
+```
+```
 python -m venv wirtual
 ```
-
 ```
 source wirtual/Scripts/activate
 ```
-
 ```
 pip install django
 ```
-
 ```
 pip install mysql
 ```
@@ -37,7 +38,7 @@ django-admin startproject project
 python manage.py startapp website
 ```
 ```
-Zaktualizować dane dotyczące MYSQL database w pliku settings.py
+Zaktualizować dane dotyczące swojej MYSQL database w pliku settings.py
 ```
 ```
 Stworzyć baze danych za pomocą pliku mydb.py
@@ -49,5 +50,16 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 ```
+kopijujemy pliki z repozytorium do teczki applikacji
+```
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+```
 python manage.py runserver
 ```
+```
+Korzystaj z aplikacji

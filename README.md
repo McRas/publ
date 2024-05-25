@@ -7,9 +7,10 @@ Python 3.10.6
 Django 4.2.7
 MySQL 8.0.37
 
-
+```
 Uruchamianie w Git Bash
 ```
+
 ```
 Tworzymy tęczke aplikacji "mkdir Nazwa teczki"
 ```

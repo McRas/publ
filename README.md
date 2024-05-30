@@ -48,9 +48,6 @@ Zaktualizować dane dotyczące swojej MYSQL database w pliku settings.py
 Stworzyć baze danych za pomocą pliku mydb.py
 ```
 ```
-python manage.py migrate
-```
-```
 python manage.py createsuperuser
 ```
 ```

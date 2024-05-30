@@ -1,6 +1,6 @@
 # 29415_52665_52668
 AEH Projekt na przedmioty: Aplikacyjny projekt zespołowy i Projektowanie wielowarstwowych aplikacji biznesowych.
-ToDo App
+SimpCRM App
 
 Wymagania:
 Python 3.10.6
@@ -12,7 +12,7 @@ Uruchamianie w Git Bash
 ```
 
 ```
-Tworzymy tęczke aplikacji "mkdir Nazwa teczki"
+Tworzymy teczkę aplikacji: mkdir "Nazwa teczki"
 ```
 ```
 python -m venv wirtual
@@ -31,6 +31,9 @@ pip install mysql-connector
 ```
 ```
 pip install mysql-connector-python
+```
+```
+pip install requests
 ```
 ```
 django-admin startproject project

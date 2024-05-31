@@ -2,26 +2,25 @@
 AEH Projekt na przedmioty: Aplikacyjny projekt zespołowy i Projektowanie wielowarstwowych aplikacji biznesowych.
 SimpCRM App
 
-Wymagania:
-Python 3.10.6
-Django 4.2.7
 MySQL 8.0.37
 
-```
-Uruchamianie w Git Bash
-```
 
+##Uruchamianie aplikacji:
+### MySQL
+* Pobierz i zainstaluj MySQL 8.0.37 https://dev.mysql.com/downloads/installer/
+* Login i hasło:
+user = 'root'
+passwd = '1234' 
+
+### Terminal:
 ```
-Tworzymy teczkę aplikacji: mkdir "Nazwa teczki"
+git clone https://github.com/McRas/29415_52665_52668.git
 ```
 ```
 python -m venv wirtual
 ```
 ```
-source wirtual/Scripts/activate
-```
-```
-pip install django
+pip install -r requirements.txt
 ```
 ```
 pip install mysql

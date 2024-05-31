@@ -18,9 +18,9 @@ python -m venv wirtual
 pip install -r requirements.txt
 ```
 
-### 3. Zaktualizować dane dotyczące swojej MYSQL database w pliku settings.py i mydb.py
+### 3. Zaktualizuj dane dotyczące swojej MYSQL database w pliku settings.py i mydb.py
 
-### 4. Stworzyć baze danych za pomocą pliku mydb.py
+### 4. Stwórz baze danych za pomocą pliku mydb.py
 
 ### 5. Terminal:
 ```

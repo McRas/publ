@@ -11,6 +11,7 @@ Pobierz i zainstaluj MySQL 8.0.37 https://dev.mysql.com/downloads/installer/
 ```
 git clone https://github.com/McRas/29415_52665_52668.git
 ```
+wejdź w folder /29415_52665_52668
 ```
 python -m venv wirtual
 ```

@@ -19,6 +19,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Zaktualizuj dane dotyczące swojej MYSQL database w pliku settings.py i mydb.py
+(domyślnie 	user = 'root', hasło = '1234')
 
 ### 4. Stwórz baze danych za pomocą pliku mydb.py
 

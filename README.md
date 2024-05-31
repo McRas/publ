@@ -25,9 +25,7 @@ pip install -r requirements.txt
 ### 4. Stwórz baze danych za pomocą pliku mydb.py
 
 ### 5. Terminal:
-```
-python manage.py createsuperuser
-```
+
 ```
 python manage.py makemigrations
 ```
@@ -36,5 +34,9 @@ python manage.py migrate
 ```
 ```
 python manage.py runserver
+```
+Opcjonalnie:
+```
+python manage.py createsuperuser
 ```
 ### 6. Uruchom: http://127.0.0.1:8000/

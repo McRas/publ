@@ -1,61 +1,31 @@
-# 29415_52665_52668
+# 29415_52665_52668_51413
 AEH Projekt na przedmioty: Aplikacyjny projekt zespołowy i Projektowanie wielowarstwowych aplikacji biznesowych.
 SimpCRM App
 
-Wymagania:
-Python 3.10.6
-Django 4.2.7
-MySQL 8.0.37
+## Uruchamianie aplikacji:
+### 1. MySQL
+Pobierz i zainstaluj MySQL 8.0.37 https://dev.mysql.com/downloads/installer/
 
-```
-Uruchamianie w Git Bash
-```
 
+### 2. Terminal:
 ```
-Tworzymy teczkę aplikacji: mkdir "Nazwa teczki"
+git clone https://github.com/McRas/29415_52665_52668.git
 ```
+Wejdź w folder /29415_52665_52668
 ```
 python -m venv wirtual
 ```
 ```
-source wirtual/Scripts/activate
+pip install -r requirements.txt
 ```
-```
-pip install django
-```
-```
-pip install mysql
-```
-```
-pip install mysql-connector
-```
-```
-pip install mysql-connector-python
-```
-```
-pip install requests
-```
-```
-django-admin startproject project
-```
-```
-python manage.py startapp website
-```
-```
-Zaktualizować dane dotyczące swojej MYSQL database w pliku settings.py
-```
-```
-Stworzyć baze danych za pomocą pliku mydb.py
-```
-```
-python manage.py migrate
-```
-```
-python manage.py createsuperuser
-```
-```
-kopijujemy pliki z repozytorium do teczki applikacji
-```
+
+### 3. Zaktualizuj dane dotyczące swojej MYSQL database w pliku settings.py i mydb.py
+(domyślnie 	user = 'root', hasło = '1234')
+
+### 4. Stwórz baze danych za pomocą pliku mydb.py
+
+### 5. Terminal:
+
 ```
 python manage.py makemigrations
 ```
@@ -65,5 +35,8 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+Opcjonalnie:
 ```
-Korzystaj z aplikacji
+python manage.py createsuperuser
+```
+### 6. Uruchom: http://127.0.0.1:8000/

@@ -64,8 +64,27 @@
 
 </form>
 
+{% endif %}
 
-
+ <!-- Wyświetlanie artykułów z NewsAPI -->
+ {% if data.articles %}
+ <h2>Najnowsze wiadomości</h2>
+ <ul>
+     {% for article in data.articles %}
+         <li>
+             <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+             <p>{{ article.description }}</p>
+             {% if article.urlToImage %}
+                 <img src="{{ article.urlToImage }}" alt="{{ article.title }}" style="max-width: 100%;">
+             {% endif %}
+             <p>Źródło: {{ article.source.name }}</p>
+             <p>Autor: {{ article.author }}</p>
+             <p>Data publikacji: {{ article.publishedAt }}</p>
+         </li>
+     {% endfor %}
+ </ul>
+{% else %}
+ <p>Brak dostępnych artykułów.</p>
 {% endif %}
 
 {% endblock %}

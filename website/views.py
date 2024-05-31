@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from .forms import SignUpForm, AddRecordForm
 from .models import Record
-import requests
+import requests # type: ignore
 
 def get_weather_data(city="Warsaw"):
     api_key = "01da91d1819f2d67733e0d2c76216220"
@@ -13,9 +13,20 @@ def get_weather_data(city="Warsaw"):
         return response.json()
     else:
         return None
+    
 
 def home(request):
     records = Record.objects.all()
+
+    news_api = "0448c5ff890f4cf0b7852f6eee7435bb"
+    url = f"https://newsapi.org/v2/top-headlines?country=pl&apiKey={news_api}"
+    response = requests.get(url)
+    data = response.json()
+    print(data)
+
+    context = {
+        'data' : data
+    }
     
     weather_data = get_weather_data("Warsaw") 
     
@@ -41,7 +52,7 @@ def home(request):
             messages.error(request, "Wystąpił błąd podczas logowania. Spróbuj ponownie...")
             return redirect('home')
     else:
-        return render(request, 'home.html', {'records': records, 'weather': weather})
+        return render(request, 'home.html', {'records': records, 'weather': weather, 'data': data})
 
 def logout_user(request):
     logout(request)

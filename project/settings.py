@@ -67,11 +67,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Baza_Danych',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_4VhnRPVFt50D_jfeehs',
+        'HOST': 'mysql-crm-baza.k.aivencloud.com',
+        'PORT': '14483',
     }
 }
 
